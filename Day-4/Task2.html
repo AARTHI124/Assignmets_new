@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Form</title>
-    <!--Create a form with an input field, a textarea, and a submit button.-->
+    <title>Document</title>
 </head>
+        <h1>Employee Form</h1>
 <body>
-    
+    <form>
+    <label for="fname">First Name:</label>
+    <input type="text" placeholder="Enter First Name"><br>
+    <label for="lname">Last Name:</label>
+    <input type="text" placeholder="Enter Second Name"><br>
+    <label for="Employee id">Employee ID</label>
+    <input type="number" placeholder="Enter your ID number"><br>
+    <label for="D.O.B">D.O.B:</label>
+    <input type="date"><br>
+    <label for="Gender">Gender:</label>
+    <input type="radio" name="Gender" value="Male">Male
+    <input type="radio" name="Gender" value="Female">Female 
+    <input type="radio" name="Gender" value="Non-Binary">Non-Binary <br>
+    <label for="phonenumber">Phone Number</label>
+    <input type="number" placeholder="Enter your Number"><br>
+    <label for="email">Email:</label>
+    <input type="email"><br>
+    <label for="Language">Language:</label>
+    <input type="checkbox" name="Language" value="Tamil">Tamil
+    <input type="checkbox" name="Language" value="English">English
+    <input type="checkbox" name="Language" value="Hindi">Hindi <br>
+    <label for="Desigination">Desigination:</label>
+    <select name="Desigination" id="Desigination">
+        <option value="Frontend Developer">Frontend Developer</option>
+        <option value="Backend Developer">Backend Developer</option>
+        <option value="FullStack Developer">FullStack Developer</option>
+        <option value="Testting">Testting</option>
+        <option value="Non-IT">Non-IT</option>
+        <option value="NA">NA</option>
+    </select><br>
+    <label for="Other">Other:</label>
+    <input type="text"><br>
+    <h3>Personal Information</h3>
+    <label for="Fname">Father Name:</label>
+    <input type="text" placeholder="Enter Father Name"><br>
+    <label for="Mname">Mother Name:</label>
+    <input type="text" placeholder="Enter Monther Name"> <br>
+    <label for="Marital status">Marital status:</label>
+    <input type="checkbox" name="Marital status" value="Yes">Yes
+    <input type="checkbox" name="Marital status" value="No">No <br>
+    <label for="Address">Address:</label>
+    <textarea name="Address" id="Address" rows="6" cols="20"></textarea><br>
+    <label for="Upload Resume">Upload Resume</label>
+    <input type="file"> <br> <br>
+    <input type="submit" value="submit">
+    <input type="submit" name="refresh" id="refresh" value="Refresh">
+    <input type="submit" name="Reset" id="Reset" value="Reset">
+</form>
 </body>
 </html>
