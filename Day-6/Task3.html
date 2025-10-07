@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!--Use checkboxes for multiple choices, radio buttons for single choice, and number fields for numeric input.-->
+</head>
+<body>
+    <form action="">
+       <fieldset>
+        <legend>Media Inquiry Form</legend>
+        <label for="Fullname">FullName : </label>
+        <input type="text" name="FullName" id="FullName"><br>
+        <label for="Gender">Gender:</label>
+    <input type="radio" name="Gender" value="Male">Male
+    <input type="radio" name="Gender" value="Female">Female 
+    <input type="radio" name="Gender" value="Non-Binary">Non-Binary <br>
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email"><br>
+        <label for="phonenumber">PhoneNumber : </label>
+        <input type="number"><br>
+        <label for="Company">Company</label>
+        <input type="text" name="Company" id="Company"><br>
+        <label for="department">Department</label>
+        <input type="text" id="department" name="department"><br>
+        <label for="mediatype">MediaType</label>
+        <input type="checkbox" name="mediatype" id="mediatype" value="Audio">
+        <label for="mediatype">Audio</label>
+        <input type="checkbox" name="mediatype" id="mediatype" value="Video">
+        <label for="mediatype">Video</label>
+        <input type="checkbox" name="mediatype" id="mediatype" value="Image">
+        <label for="mediatype">Image</label><br>
+        <label for="description">Description of the requested media</label>
+        <textarea name="description" id="description"></textarea><br>
+        <label for="deliverydate">Date to Deliver By</label>
+        <input type="text" name="deliverydate" id="deliverydate">
+        <br><br><br>
+        <button type="submit">Submit</button>
+    </fieldset>
+    </form>
+    
+    
+</body>
+</html>
