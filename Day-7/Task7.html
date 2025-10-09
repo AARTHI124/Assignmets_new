@@ -4,11 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendence Sheet</title>
+    <title>Attendance Sheet</title>
 </head>
+<style>
+    #row2
+    { background-color: rgb(231, 235, 173);
+     }
+     #row1
+     {
+        background-color: antiquewhite;
+     }
+     h1
+     {
+        color: chocolate;
+     }
+</style>
 <body>
+    <form action="">
     <table border="1" style="border-collapse: collapse;">
-        <tr>
+        <center>
+            <h1>Mothly Attendance Record 📆📝</h1>
+        </center>
+        <tr id="row1">
             <th rowspan="2">Student Name</th>
             <th colspan="2">1</th>
             <th colspan="2">2</th>
@@ -42,7 +59,7 @@
             <th colspan="2">30</th>
             <th colspan="2">31</th>
         </tr>
-        <tr>
+        <tr id="row2">
             <td>P</td>
             <td>A</td>
             <td>P</td>
@@ -374,6 +391,9 @@
         </tr>
         </tr>
     </table>
+    <br>
+    <button type="submit">Save</button>
+    </form>
 </body>
 
 </html>
