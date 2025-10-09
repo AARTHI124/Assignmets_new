@@ -1,0 +1,9 @@
+.para2
+{
+    color: deeppink;
+    background-color: cornsilk;
+    text-align: right;
+    border: 3px solid blue;
+    padding: 20px;
+    border-radius: 30px;
+}
