@@ -1,0 +1,21 @@
+/* Universal selector reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: darkgreen;
+}
+
+p {
+  color: darkslategray;
+}
+
+img {
+  width: 50%;
+}

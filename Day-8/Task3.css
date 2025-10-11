@@ -1,0 +1,29 @@
+h1, h2, h3 {
+  color: darkgreen;
+  font-size: 30px;
+  text-align: center;
+  background-color: lightcyan;
+  border: 2px solid black;
+}
+p {
+  color: darkslategray;
+  font-size: 18px;
+  text-align: justify;
+}
+body{
+    background-color: whitesmoke;
+}
+#p2
+{
+    color: darkorchid;
+}
+.p1
+{
+    color: rgb(112, 225, 100);
+    border: 2px solid violet;
+    padding: 3px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    text-align: left;
+    font-size: smaller;
+}
