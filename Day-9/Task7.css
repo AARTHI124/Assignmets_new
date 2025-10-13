@@ -1,0 +1,17 @@
+body{
+    background-color: lightpink;
+}
+.a1{
+    text-align: center;
+    color: limegreen;
+}
+.standard{
+    width: 300px;
+    height: 500px;
+    border: 5px solid black;
+    text-align: center;
+}
+#f1{
+    color: white;
+    background-color: green;
+}
