@@ -1,0 +1,23 @@
+.a1{
+    border: 10px solid greenyellow;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.a2{
+    border: 10px solid chocolate;
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.a3{
+    border: 15px solid blueviolet;
+    border-radius: 30px;
+    padding: 30px;
+}
+h1{
+    background-color: cadetblue;
+    color: white;
+    text-align: center;
+}

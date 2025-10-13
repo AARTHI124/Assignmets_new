@@ -1,0 +1,22 @@
+.A1{
+    color: red;
+    border: 10px solid black;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.A2{
+    color: darkmagenta;
+    border: 10px dotted black;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.A3{
+    color: limegreen;
+    border: 15px double black;
+    text-align: center;
+}
+h1{
+    color: palevioletred;
+    background-color: lightgreen;
+    text-align: center;
+}

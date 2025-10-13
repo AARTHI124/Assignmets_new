@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color: darkviolet;
+    background-color: azure;
+}
+.aa{
+    width: 300px;
+    height: 200px;
+    color: rgb(185, 170, 4);
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    border: 25px solid darkviolet;
+    margin-left: 300px;
+}
+.pp,.mm{
+    color: white;
+    background-color: seagreen;
+}
+.mm{
+text-align: center;
+}
