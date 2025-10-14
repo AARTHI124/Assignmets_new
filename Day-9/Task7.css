@@ -1,17 +1,54 @@
 body{
     background-color: lightpink;
 }
-.a1{
+.price
+{
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+   gap: 50px;
+
+}
+hr{
+    cursor: pointer;
+}
+
+h1
+{
     text-align: center;
-    color: limegreen;
+    color: rgb(14, 14, 15);
+    border-radius: 10%;
+    background-color: rgb(213, 182, 207) ;
+}
+.plan{
+    width: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.basic{
+    background-color: rgb(175, 136, 196);
+    color: rgb(87, 7, 116);
+    border: 5px solid rgb(0, 0, 0);
 }
 .standard{
-    width: 300px;
-    height: 500px;
-    border: 5px solid black;
-    text-align: center;
+    background-color: rgb(160, 95, 121);
+    color: rgb(153, 31, 123);
+    border: 5px double rgb(18, 12, 12);
 }
-#f1{
+.premium{
+    background-color:rgb(135, 149, 112);
+    color: rgb(60, 97, 29);
+    border: 5px dashed rgb(0, 0, 0);
+}
+u{
     color: white;
-    background-color: green;
+}
+.plan:hover{
+    border-radius: 30%;
+}
+h1:hover{
+    background-color: rgb(74, 13, 118);
+    color: rgb(116, 86, 109);
+    border-radius: 5%;
 }
