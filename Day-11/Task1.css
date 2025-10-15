@@ -1,0 +1,16 @@
+.aa{
+    color: mediumorchid;
+    text-align: center;
+    background-color: bisque;
+}
+.box{
+    height: 500px;
+    width: 600PX;
+    border:10px solid black;
+    padding: 10px;
+    text-align: center;
+    margin-left: 30%;
+}
+a::after {
+  content: " (" attr(href) ")";
+}
