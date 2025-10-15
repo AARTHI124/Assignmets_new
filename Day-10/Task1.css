@@ -1,7 +1,95 @@
-#grad {
-  height: 80px;
-  background-image: linear-gradient(to bottom, rgb(253, 112, 255), yellow);
-}
-h1{
+.gradient{
+    height: 100px;
+    width: 97%;
+    padding: 10px;
+    border: 5px solid black;
+    background: linear-gradient(to bottom, rgb(230, 118, 174), rgb(105, 10, 124));
     text-align: center;
+    text-transform: uppercase;
+    text-shadow: 6px 2px rgb(0, 0, 0);
+    color: darksalmon;
+    margin: 10px;
+}
+
+.gradient{
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.banner{
+    background-image: url(botanical-wedding-twitch-banner_23-2151021781.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: larger;
+    text-align: center;
+    color: rgb(4, 27, 112);
+}
+.links{
+    text-align: end;
+    padding-right: 20px;
+    margin-right: 10px;
+}
+.box{
+    border: 5px solid greenyellow;
+    padding: 10px;
+    margin: 10px;
+}
+.relative{
+        position: relative;
+        left: 100px;
+        background-color: lightcoral;
+}
+.absolute{
+    position: absolute;
+    right: 60px;
+    background-color: aqua;
+}
+.fixed{
+    position: fixed;
+    background-color: blue;
+}
+.referenece{
+    background-color: lightgray;
+    text-align: center;
+}
+.Rajini{
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    border: 10px solid blueviolet;
+    margin-left: 30%;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: rgb(212, 107, 184);
+    color: rgb(7, 195, 170);
+}
+.Fixed{
+    background-color: rgb(207, 207, 27);
+}
+.nav{
+    background-color: palevioletred ;
+    height: 20px;
+    width: 50px;
+    border: 5px solid purple;
+    padding: 10px;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+.line{
+    letter-spacing:2px;
+    word-spacing: 3px;
+    color: darkorchid;
+    background-color: rgb(214, 202, 151);
+}
+.Sticky{
+    text-align: center;
+    color: rgb(213, 58, 6);
+
+}
+#a1{
+    position: sticky;
+    background-color: chartreuse;
+    top: 0;
 }
