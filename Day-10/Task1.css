@@ -1,0 +1,7 @@
+#grad {
+  height: 80px;
+  background-image: linear-gradient(to bottom, rgb(253, 112, 255), yellow);
+}
+h1{
+    text-align: center;
+}
