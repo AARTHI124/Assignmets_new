@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Page Layout with Grid</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav main"
+                "aside main"
+                "footer footer";
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            grid-area: nav;
+            background: #f2f2f2;
+            padding: 15px;
+        }
+
+        main {
+            grid-area: main;
+            background: #fff;
+            padding: 15px;
+        }
+
+        aside {
+            grid-area: aside;
+            background: #eaeaea;
+            padding: 15px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>Header</header>
+        <nav>Navigation</nav>
+        <main>Main Content Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor culpa, nemo modi porro
+            commodi, in, officia voluptas ipsum molestias temporibus obcaecati. At, ducimus. Corrupti dicta quasi iste
+            error, maiores dolores officiis quam quos, dolor, fuga ducimus iure laborum possimus molestiae eligendi non
+            aliquid. At cumque sapiente doloribus laborum impedit, reiciendis numquam quos hic dolorem. Illum placeat et
+            eum sunt esse atque omnis assumenda. Quisquam mollitia tenetur esse illum voluptatem accusamus aliquid dicta
+            laudantium, eum quasi similique distinctio eveniet labore soluta magni numquam minima rerum aspernatur,
+            quaerat id laboriosam nesciunt possimus? Adipisci assumenda beatae blanditiis? Ipsum labore voluptatibus
+            ratione neque pariatur delectus fugiat fugit totam numquam quisquam voluptatum eos eligendi incidunt tempora
+            eveniet repellat impedit voluptas cupiditate recusandae, excepturi tempore ad maiores adipisci velit.
+            Cupiditate quidem ullam sequi quam ab assumenda veritatis soluta, porro consectetur ut officiis nobis
+            reprehenderit placeat eligendi molestiae accusamus minima reiciendis. Deleniti incidunt possimus voluptate
+            iusto earum eveniet, totam, dolorem nihil odit blanditiis doloremque accusantium ab soluta alias tempore
+            exercitationem nam voluptatum atque recusandae voluptatibus! Dolorum incidunt omnis obcaecati saepe, iure
+            optio consectetur quisquam tenetur blanditiis ducimus? Placeat iure molestiae, iusto commodi blanditiis
+            doloribus incidunt sint quos vel ut ex ipsa amet atque vero aut autem accusantium?<h2 style="text-align: center;">lorem</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolorum placeat illum doloribus eaque, ad
+                velit ut itaque tempore esse, animi aperiam asperiores veniam eos corrupti eveniet odit nulla! Sint
+                dolore distinctio voluptatum enim dolor, quidem saepe cum suscipit rerum fugit ab consequuntur eos
+                officiis dolorum nesciunt id fugiat ratione tenetur accusantium repudiandae nam debitis fuga accusamus?
+                Dolores culpa veniam sint provident labore numquam dicta, explicabo earum omnis reprehenderit facere rem
+                tenetur at tempora necessitatibus illo. Ullam eos alias labore ab quae dignissimos harum repellendus
+                impedit cumque odio quam blanditiis, porro eveniet eum vitae eligendi provident. Provident rem, nisi
+                saepe ducimus quaerat dolor vel animi voluptate quibusdam illo voluptatem quod maiores possimus sint!
+                Corrupti, explicabo unde in provident accusantium voluptatibus ipsam ut, soluta quisquam et consectetur!
+                Aperiam suscipit non accusantium neque velit nisi est voluptate mollitia consequuntur, nemo, placeat
+                ipsum ducimus similique necessitatibus eius. Iste ipsum quas, nulla ad perferendis, beatae impedit
+                adipisci quasi similique modi doloribus, cupiditate distinctio temporibus? Debitis perspiciatis placeat
+                eius doloremque error quod corrupti natus dolores, corporis, harum ut impedit, quasi quisquam sapiente
+                mollitia. Ipsum voluptatum molestias aspernatur culpa tempora numquam cum nostrum totam architecto.
+                Soluta, ipsa? Ratione repellendus atque voluptatibus porro. Fugiat omnis enim recusandae.</p>
+        </main>
+        <aside>Sidebar / Extra Info</aside>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>

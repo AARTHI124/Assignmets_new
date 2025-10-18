@@ -1,0 +1,13 @@
+img{
+    float: right;
+}
+h1{
+    text-align: center;
+}
+.p{
+    height: 550px;
+    width: 700px;
+    border: 5px solid black;
+    padding: 20px;
+    margin-left: 20%;
+}
