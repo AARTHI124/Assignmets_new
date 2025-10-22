@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Font Sizes</title>
+<style>
+  html {
+    font-size: 16px;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  p {
+    font-size: 1rem;
+    line-height: 1.5em;
+  }
+  @media (max-width: 900px) {
+    html {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 600px) {
+    html {
+      font-size: 14px;
+    }
+  }
+</style>
+</head>
+<body>
+<h1>Responsive Typography</h1>
+<h2>Using em and rem Units</h2>
+<p>
+  This text adjusts based on screen size using relative units.  
+  The base font size (in rem) scales with viewport width, making text more readable across devices.
+</p>
+</body>
+</html>

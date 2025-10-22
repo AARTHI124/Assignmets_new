@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Hero Section</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .hero {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5vw;
+  }
+  .hero h1 {
+    font-size: 6vw;
+    margin-bottom: 2vh;
+  }
+  .hero p {
+    font-size: 2vw;
+    max-width: 60vw;
+  }
+  .hero button {
+    margin-top: 4vh;
+    padding: 1vh 3vw;
+    font-size: 1.5vw;
+    border: none;
+    border-radius: 8px;
+    background: white;
+    color: #2575fc;
+    cursor: pointer;
+  }
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 9vw;
+    }
+    .hero p {
+      font-size: 4vw;
+      max-width: 80vw;
+    }
+    .hero button {
+      font-size: 4vw;
+    }
+  }
+</style>
+</head>
+<body>
+<section class="hero">
+  <h1>Welcome to My Portfolio</h1>
+  <p>Creating modern, responsive designs that adapt beautifully to every screen.</p>
+  <button>Explore Now</button>
+</section>
+</body>
+</html>

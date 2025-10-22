@@ -1,0 +1,21 @@
+.em{
+    font-size: 5em;
+}
+.rem{
+    font-size: 5rem ;
+} 
+.px{
+    font-size: 80px;
+}
+div{
+    background-color: rgb(145, 182, 182);
+    color: rgb(255, 24, 213);
+    border-radius: 20px;
+}
+h2{
+    border: 20px dotted rgb(15, 15, 24);
+    border-radius: 30px;
+}
+h1{
+    text-decoration: underline;
+}
