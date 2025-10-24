@@ -1,0 +1,10 @@
+h1{
+   background-color: lightcoral;
+   color: white;
+   width: fit-content;
+   animation-name: slideRight;
+   animation-duration: 3s;
+}
+@keyframes slideRight{
+    to{transform: translateX(300px);}
+}

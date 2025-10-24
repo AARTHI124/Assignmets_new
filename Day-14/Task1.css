@@ -1,0 +1,13 @@
+div{
+    background-color: black;
+    height: 200px;
+    width: 200px;
+}
+div:hover{
+    animation-name: boxcolour;
+    animation-duration: 2s;
+}
+@keyframes boxcolour{
+    from{ background-color: black;}
+    to{background-color: blueviolet;}
+}
