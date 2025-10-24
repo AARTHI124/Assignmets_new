@@ -1,0 +1,18 @@
+.myButton {
+  background-color: skyblue;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.myButton:hover {
+  background-color: deepskyblue;
+  transform: scale(1.05);
+}
+.myButton:focus {
+  outline: 3px solid lightblue;
+  background-color: dodgerblue;
+}

@@ -1,0 +1,15 @@
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: #4CAF50;
+  margin: 100px auto;
+  animation: rotateSquare 2s linear infinite;
+}
+@keyframes rotateSquare {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
