@@ -1,20 +1,13 @@
-<!--JavaScript (JS) has evolved greatly since its creation:
-
+<JavaScript (JS) has evolved greatly since its creation:
 1. **1995 – Birth of JavaScript:**
    Brendan Eich created JavaScript in just 10 days at Netscape to make web pages interactive. It was first called *Mocha*, then *LiveScript*, and finally *JavaScript*.
-
 2. **1997 – Standardization (ECMAScript):**
    JavaScript became standardized as ECMAScript (ES) by ECMA International. ES1 was released in 1997, followed by ES2 (1998) and ES3 (1999).
-
 3. **2009 – ES5 Revolution:**
    ES5 introduced JSON support, `strict mode`, and better object handling. This made JavaScript more stable and widely used.
-
 4. **2015 – ES6 (ECMAScript 2015):**
    A huge upgrade adding `let`, `const`, arrow functions, classes, promises, and modules—modern JavaScript began here.
-
 5. **2016–Present – Continuous Growth:**
-   New versions (ES7, ES8, etc.) are released yearly with features like `async/await`, `optional chaining`, and modern APIs. Frameworks like React, Angular, and Node.js expanded JS beyond browsers to full-stack development.
-
+   New versions (ES7, ES8, etc.) are released yearly with features like `async `optional chaining`, and modern APIs. Frameworks like React, Angular, and Node.js expanded JS beyond browsers to full-stack development.
 6. **Today – Universal Language:**
    JavaScript now powers web, mobile, desktop, and even AI apps—used everywhere from browsers to servers to IoT.
--->

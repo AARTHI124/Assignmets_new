@@ -1,0 +1,20 @@
+1.	JavaScript was created by Brendan Eich in 1995.
+2.	It was developed for Netscape Navigator to make web pages interactive.
+3.	JavaScript is one of the core web technologies alongside HTML and CSS.
+4.	It is a high-level, interpreted scripting language.
+5.	JavaScript follows the ECMAScript standard.
+6.	ES6 (2015) introduced modern features like let, const, and arrow functions.
+7.	It supports object-oriented and functional programming.
+8.	JavaScript is single-threaded but supports asynchronous operations.
+9.	It manipulates HTML and CSS through the DOM.
+10.	Node.js allows JavaScript to run on servers.
+11.	Frameworks like React, Angular, and Vue are built with JavaScript.
+12.	JavaScript supports Promises and async/await for handling asynchronous code.
+13.	It is dynamically typed, meaning variable types are determined at runtime.
+14.	JSON is a lightweight data format derived from JavaScript.
+15.	The language is case-sensitive and loosely typed.
+16.	JavaScript engines like V8 (Chrome) and SpiderMonkey (Firefox) execute code efficiently.
+17.	It supports modules for better code organization.
+18.	Modern browsers have built-in developer tools for debugging JavaScript.
+19.	JavaScript can build web, mobile, and desktop apps.
+20.	It continues to evolve annually with new ECMAScript updates.
