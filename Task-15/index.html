@@ -1,56 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Coffee Corner</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f3ee;
+            color: #3e2723;
+        }
+        header {
+            background-color: #6f4e37;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-image: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .hero button {
+            background-color: #ffcc80;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #ffe0b2;
+        }
+        .menu {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .menu h2 {
+            font-size: 32px;
+        }
+        .items {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+        .gallery {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fff8f0;
+        }
+        .gallery h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .gallery-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .gallery-images img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s;
+        }
+        .gallery-images img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="Task1.css">
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+    <header>
+        <h1>Coffee Corner</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Gallery</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Welcome to Coffee Corner</h2>
+        <p>Freshly brewed happiness in every cup.</p>
+        <button>Order Now</button>
+    </section>
+    <section class="menu">
+        <h2>Our Menu</h2>
+        <div class="items">
+            <div class="card">
+                <h3>Espresso</h3>
+                <p>Rich and bold coffee shot.</p>
+            </div>
+            <div class="card">
+                <h3>Cappuccino</h3>
+                <p>Perfect mix of coffee, milk, and foam.</p>
+            </div>
+            <div class="card">
+                <h3>Mocha</h3>
+                <p>Chocolate flavored delight.</p>
             </div>
         </div>
-    </nav>
+    </section>
+    <section class="gallery">
+        <h2>Our Coffee Moments</h2>
+        <div class="gallery-images">
+            <img src="https://images.unsplash.com/photo-1510626176961-4b37d0af3c4c" alt="Coffee Cup">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Beans and Cup">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Latte Art">
+            <img src="https://images.unsplash.com/photo-1498804103079-a6351b050096" alt="Coffee Beans">
+            <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187" alt="Coffee Setup">
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 Coffee Corner | Freshly brewed with ❤️</p>
+    </footer>
 </body>
-
 </html>
