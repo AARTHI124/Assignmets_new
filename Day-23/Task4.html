@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="item">
+    <li>Sky diving</li>
+    <li>World tour</li>
+    <li>Learn guitar</li>
+    </ul>
+    <button onclick="removeitem()">click to remove</button>
+    <script>
+        function removeitem(){
+            let delect = document.getElementById("item");
+            let firstitem = delect.firstElementChild;
+            delect.removeChild(firstitem);
+        }
+    </script>
+</body>
+</html>

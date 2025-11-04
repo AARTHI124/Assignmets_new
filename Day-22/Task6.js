@@ -11,4 +11,3 @@ discountedPrice(discount) {
 }
 const item = new Product("Shoes", 2000);
 item.discountedPrice(10);
-

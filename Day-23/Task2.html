@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--Use querySelector() to change the color of a paragraph-->
+<body>
+    <h1 class="rt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, accusamus.</h1>
+    <button onclick="changecolor()">change color</button>
+    <script>
+         function changecolor() {
+            let text = document.querySelector(".rt");
+            text.style.color="pink"
+        }
+    </script>
+</body>
+</html>

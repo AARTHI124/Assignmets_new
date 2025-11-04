@@ -1,0 +1,24 @@
+<!-- Add 3 items to a list dynamically using appendChild(). -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add List Items Dynamically</title>
+</head>
+<body>
+  <h2>My Dynamic List</h2>
+  <ul id="mylist">
+    <li>item 0</li>
+  </ul>
+  <button onclick="addItems()">Add 3 Items</button>
+  <script>
+    const list = document.querySelector("#mylist");
+    for (let i = 1; i <= 3; i++) {
+      const li = document.createElement("li");
+      li.textContent = "Item " + i;
+      list.appendChild(li);
+    }
+  </script>
+</body>
+</html>
