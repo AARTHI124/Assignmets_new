@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <form id="myForm">
+    <input type="text" placeholder="Enter something" required>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("myForm");
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      alert("Form submitted without reloading!");
+    });
+  </script>
+</body>
+</html>
