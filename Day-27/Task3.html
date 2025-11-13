@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile (Async/Await)</title>
+</head>
+<body>
+  <h2>My GitHub Profile</h2>
+  <p id="login"></p>
+  <p id="repos"></p>
+  <p id="error" style="color:red;"></p>
+
+  <script>
+    async function fetchGitHubData() {
+      try {
+        let response = await fetch("https://api.github.com/users/arthivaasugi"); // replace with your username
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        let data = await response.json();
+        document.getElementById("login").textContent = `Username: ${data.login}`;
+        document.getElementById("repos").textContent = `Public Repos: ${data.public_repos}`;
+      } catch (error) {
+        document.getElementById("error").textContent = "Error fetching data: " + error.message;
+      }
+    }
+
+    fetchGitHubData();
+  </script>
+</body>
+</html>

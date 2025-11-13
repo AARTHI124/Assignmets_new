@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Profile</title>
+</head>
+<body>
+  <h2>My GitHub Profile</h2>
+  <p id="login"></p>
+  <p id="repos"></p>
+
+  <script>
+    fetch("https://api.github.com/users/arthivaasugi") // replace with your username
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("login").textContent = `Username: ${data.login}`;
+        document.getElementById("repos").textContent = `Public Repos: ${data.public_repos}`;
+      })
+      .catch(error => console.log("Error:", error));
+  </script>
+</body>
+</html>
