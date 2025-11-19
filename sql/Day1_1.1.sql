@@ -1,3 +1,4 @@
+-- question no 6 to 10
 -- Extend the edu_platform database by adding a assignments table.
 create database edu_platform;
 use edu_platform;
@@ -43,4 +44,3 @@ add constraint fk_assignments_lesson
 foreign key (lesson_id)
 references lesson(lesson_id);
 -- Export the extended DB using mysqldump and restore it into a new DB.
-
