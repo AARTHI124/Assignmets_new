@@ -78,3 +78,36 @@ SELECT id, first_name, hire_date
 FROM employees
 WHERE hire_date < '2021-01-01';
 delete from employees where id in (3,4,5,7,10,15,16,17,19,23,24,25,26,30)
+-- Sort all employees by salary ascending.
+select first_name, last_name from employees order by salary asc;
+select * from employees order by salary asc;
+
+-- Practical Tasks
+-- Create a table products with correct data types (id, name, price, created_at).
+create table products (
+id int primary key auto_increment,
+name varchar(100),
+price decimal(10,2),
+created_at datetime
+);
+-- Insert 5 sample products.
+INSERT INTO products (name, price, created_at)
+VALUES 
+('Laptop', 55000.00, '2025-01-15 10:30:00'),
+('Headphones', 1999.99, '2025-01-16 14:20:00'),
+('Smartphone', 29999.50, '2025-01-17 09:15:00'),
+('Keyboard', 999.00, '2025-01-18 12:45:00'),
+('Mouse', 499.00, '2025-01-18 12:50:00');
+select * from products;
+-- Write a query that lists products priced above 500.
+ select name from products where price>1000;
+ -- Update product name using its id.
+update products set name = "ipad" where id =1;
+-- Show top 3 most expensive products using ORDER BY + LIMIT.
+alter table products add limited_no int;
+update products set limited_no =2 where id=1;
+update products set limited_no =7 where id=2;
+update products set limited_no =3 where id=3;
+update products set limited_no =1 where id=4;
+update products set limited_no =2 where id=5;
+select name from products where price >2000 order by limited_no asc; 
