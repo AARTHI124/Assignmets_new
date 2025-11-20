@@ -4,6 +4,9 @@ SHOW TABLES;
 SELECT * FROM assignments;
 SELECT * FROM lesson;
 SELECT * FROM assignments;
+
+
+
 -- Assignment Day 32 - Data Types + Basic SQL Operations (CRUD + Filters + Sorting + Limit)
 -- Insert 3 new employees into the employees table.
 create table empployee(
