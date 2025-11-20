@@ -51,7 +51,6 @@ city varchar(20)
 insert into customer (cus_id, cus_name, city) values (1,"Vaasugi","mayiladuthurai")
 insert into customer (cus_id,cus_name,city) values (2,"Keerthi","Thiruvanamalai")
 insert into customer (cus_id,cus_name,city) values (3,"Rajesh","Chennai")
-select * from customer;
 -- Table 2
 create table orders (
     order_id int primary key auto_increment,
@@ -63,7 +62,7 @@ insert into orders (order_id, customer_id, order_date, amount) values (1,101,'20
 insert into orders (order_id, customer_id, order_date, amount) values (2,102,'2025-11-17',20000)
 select * from orders;
 -- now using query selectoer
-select customer.cus_name, customer.city, orders.customer_id, orders.order_id, orders.order_date,orders.amount from customer join orders on customer.cus_id = orders.order_id;
+select customer.cus_name, customer.city, orders.customer_id, orders.order_date,orders.amount from customer join orders on customer.cus_id = orders.order_id;
 -- class work
 create table demo_types (
 id int primary key auto_increment,

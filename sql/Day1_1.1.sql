@@ -13,7 +13,8 @@ insert into assignments(student_id, student_name, subject_name, assignment_mark)
 insert into assignments(student_id, student_name, subject_name, assignment_mark) values (102,"Kavi","Maths",100)
 insert into assignments(student_id, student_name, subject_name, assignment_mark) values (103,"Keerthi","Maths",98)
 insert into assignments(student_id, student_name, subject_name, assignment_mark) values (104,"Harini","Maths",89)
-insert into assignments(student_id, student_name, subject_name, assignment_mark) values (105,"Dharshika","Maths",79)
+insert into assignments(student_id, student_name, subject_na
+me, assignment_mark) values (105,"Dharshika","Maths",79)
 alter table assignments add lesson_id int;
 update assignments set lesson_id = 1 where student_id = 101;
 update assignments set lesson_id = 2 where student_id = 102;
