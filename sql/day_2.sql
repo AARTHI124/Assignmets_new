@@ -81,7 +81,6 @@ delete from employees where id in (3,4,5,7,10,15,16,17,19,23,24,25,26,30)
 -- Sort all employees by salary ascending.
 select first_name, last_name from employees order by salary asc;
 select * from employees order by salary asc;
-
 -- Practical Tasks
 -- Create a table products with correct data types (id, name, price, created_at).
 create table products (
@@ -110,4 +109,4 @@ update products set limited_no =7 where id=2;
 update products set limited_no =3 where id=3;
 update products set limited_no =1 where id=4;
 update products set limited_no =2 where id=5;
-select name from products where price >2000 order by limited_no asc; 
+select name from products where price >2000 order by limited_no asc;  
