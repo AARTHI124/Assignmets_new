@@ -4,9 +4,6 @@ SHOW TABLES;
 SELECT * FROM assignments;
 SELECT * FROM lesson;
 SELECT * FROM assignments;
-
-
-
 -- Assignment Day 32 - Data Types + Basic SQL Operations (CRUD + Filters + Sorting + Limit)
 -- Insert 3 new employees into the employees table.
 create table empployee(
@@ -113,3 +110,5 @@ update products set limited_no =3 where id=3;
 update products set limited_no =1 where id=4;
 update products set limited_no =2 where id=5;
 select name from products where price >2000 order by limited_no asc;  
+
+
