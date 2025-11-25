@@ -107,3 +107,4 @@ select dep_id first_name, last_name,salary from employees where dep_id=1 or dep_
 -- used only with group by
 
 select dep_id, avg(salary) as avg_salary from employees group by dep_id having avg(salary)>70000;
+

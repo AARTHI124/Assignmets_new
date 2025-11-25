@@ -1,6 +1,5 @@
 -- Day 34 - Fetching Data, Filters, Aggregation & Sorting
 -- Fetch first_name, salary of employees with salary > 75,000
-
 use edu_platform_new;
 create table employees (
 id int primary key auto_increment,
@@ -62,3 +61,14 @@ select * from employees where active = 0;
 -- Show top 5 highest salaries.
 select * from employees order by  salary desc limit 5;
 -- Create a report: number of employees per department (GROUP BY).
+ select dep_id , count(*) as employee_count from employees group by dep_id;
+-- Show only departments with more than 5 employees (HAVING).
+ select dep_id,count(*) as employee_count from employees group by dep_id having COUNT(*) < 4;
+ -- Salary analytics: SUM, AVG, MIN, MAX for each department.
+select dep_id , sum(salary) AS total_salary,
+avg(salary) as avg_salary,
+max(salary) as maximum_salary,
+min(salary) as minimum_salary 
+from employees group by dep_id;
+-- Paginate employees: show rows 11–20.
+SELECT * FROM employees ORDER BY id LIMIT 10 OFFSET 10;
