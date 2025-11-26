@@ -17,19 +17,19 @@ DATEDIFF(
         CURDATE()
     ) AS days_until_birthday
 FROM persons;
--- -- 4️⃣ Convert names to uppercase and lowercase
+--Convert names to uppercase and lowercase
 SELECT name,
     UPPER(name) AS upper_name,
     LOWER(name) AS lower_name
 FROM persons;
--- -- 5️⃣ Replace "bad" with "good" in a sentence
+--Replace "bad" with "good" in a sentence
 SELECT REPLACE('This is a bad example', 'bad', 'good') AS new_sentence;
--- -- 6️⃣ Format roll numbers to 4 digits using LPAD
+--Format roll numbers to 4 digits using LPAD
 SELECT 
     person_id,
     LPAD(person_id, 4, '0') AS roll_number
 FROM persons;
--- 1️⃣ Create a function to calculate months old
+--Create a function to calculate months old
 DELIMITER $$
 CREATE FUNCTION months_old(birth DATE) RETURNS INT
 DETERMINISTIC
@@ -39,26 +39,26 @@ END$$
 DELIMITER ;
 -- Usage
 SELECT name, months_old(birthdate) AS months_old FROM persons;
--- 2️⃣ Date calculator: difference in years, months, days
+-- Date calculator: difference in years, months, days
 SELECT 
     name,
     TIMESTAMPDIFF(YEAR, birthdate, CURDATE()) AS years_diff,
     TIMESTAMPDIFF(MONTH, birthdate, CURDATE()) AS months_diff,
     DATEDIFF(CURDATE(), birthdate) AS days_diff
 FROM persons;
--- 3️⃣ String formatter: trim & capitalize first letter
+--String formatter: trim & capitalize first letter
 SELECT 
     name,
     CONCAT(UCASE(LEFT(TRIM(name),1)), LCASE(SUBSTRING(TRIM(name),2))) AS formatted_name
 FROM persons;
--- 4️⃣ Extract first name, last name, initials
+--Extract first name, last name, initials
 SELECT 
     name,
     SUBSTRING_INDEX(name, ' ', 1) AS first_name,
     SUBSTRING_INDEX(name, ' ', -1) AS last_name,
     CONCAT(LEFT(SUBSTRING_INDEX(name, ' ', 1),1), LEFT(SUBSTRING_INDEX(name, ' ', -1),1)) AS initials
 FROM persons;
--- 5️⃣ Countdown to New Year or any event
+--Countdown to New Year or any event
 SELECT 
     name,
     DATEDIFF(CONCAT(YEAR(CURDATE()) + (CURDATE() > '2025-01-01'), '-01-01'), CURDATE()) AS days_to_new_year
