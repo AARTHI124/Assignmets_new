@@ -1,6 +1,6 @@
 import React from "react";
 
-const Task9 = ({ children }) => {
+const Task9() = ({ children }) => {
   return (
     <div>
       <header>Header</header>

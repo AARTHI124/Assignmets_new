@@ -1,6 +1,6 @@
 import React from "react";
 
-const Task5 = ({ children }) => {
+const Task5() = ({ children }) => {
   return (
     <div className="card">
       {children}

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Task7 = ({ color, size, text }) => {
+const Task7() = ({ color, size, text }) => {
   return (
     <button
       style={{

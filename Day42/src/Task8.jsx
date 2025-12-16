@@ -1,6 +1,6 @@
 import React from "react";
 
-const Task8 = ({ title, price }) => {
+const Task8() = ({ title, price }) => {
   return (
     <div>
       <h4>{title}</h4>

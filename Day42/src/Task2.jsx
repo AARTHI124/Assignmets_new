@@ -1,6 +1,6 @@
 import React from "react";
 
-const Task2 = ({ name, age }) => {
+const Task2() = ({ name, age }) => {
   return (
     <div>
       <h2>Name: {name}</h2>
